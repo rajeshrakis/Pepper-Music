@@ -7,6 +7,7 @@ RUN mkdir /VideoPlayerBot
 WORKDIR /VideoPlayerBot
 COPY . /VideoPlayerBot
 
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+RUN pip3 install --upgrade pip
+RUN pip3 install -U -r requirements.txt
 
 CMD python3 main.py
